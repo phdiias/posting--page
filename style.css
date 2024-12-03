@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: 'Exo 2', serif;
+  font-size: 10px;
+}
+
+a {
+  all: unset;
+}
+
+button {
+  all: unset;
+}
+
+/* Menu desktop */
+#menu-desktop {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .menu-navigation {
+    max-width: 1188px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo-and-sitename {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      & .logo {
+        width: 56px;
+      }
+
+      & .sitename {
+        width: 100%;
+        font-size: 2rem;
+        color: #009472;
+        font-weight: 700;
+        cursor: pointer;
+
+        transition: color 0.4s ease;
+
+        &:hover {
+          color: #8f2d56;
+        }
+      }
+    }
+
+    & .post-now {
+      font-size: 2rem;
+      padding: 1rem 3rem;
+      border: 1px solid #8f2d56;
+      border-radius: 30px;
+      color: #8f2d56;
+      font-weight: 600;
+      cursor: pointer;
+
+      transition: color 0.4s ease border 0.4s ease;
+
+      &:hover,
+      &:focus {
+        color: #6c1f42;
+        border: 1px solid #6c1f42;
+      }
+    }
+  }
+}
+
+/* Sessão Hero */
+#hero {
+  max-width: 1188px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  & .hero-image {
+    flex: 1;
+    & img {
+      width: 80%;
+    }
+  }
+
+  & .hero-texts {
+    flex: 1.5;
+
+    & h1 {
+      font-size: 7rem;
+      font-weight: 500;
+      margin-bottom: 3rem;
+    }
+
+    & p {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+    }
+
+    & a {
+      font-size: 2rem;
+      border: 1px solid #8f2d56;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      background-color: #8f2d56;
+      color: #ffffff;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.4s ease;
+
+      &:hover,
+      &:focus {
+        background-color: #b6396d;
+      }
+    }
+  }
+}
+
+/* Sessão do formulário */
+#form-post {
+  max-width: 1188px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .left-form-content {
+    flex: 1;
+    align-self: first baseline;
+
+    & span {
+      font-size: 2rem;
+      font-weight: 400;
+      border: 1px solid #cfcfcf;
+      border-radius: 30px;
+      padding: 1rem 2rem;
+      color: #262626;
+    }
+  }
+
+  & .right-form-content {
+    flex: 3;
+
+    & h2 {
+      font-size: 7rem;
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+
+    & .right-form-content-desc {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      & .desc-images {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .desc-img {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          z-index: 2;
+        }
+
+        & .desc-icon-container {
+          width: 10rem;
+          height: 10rem;
+          border: 1px solid #cfcfcf;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: -2rem;
+
+          & .desc-icon {
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+
+      & .desc-texts {
+        flex: 3;
+
+        & p {
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
