@@ -1,59 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Posting Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Posting Page</title>
-</head>
-
-<body>
-  <header>
-    <nav id="menu-desktop">
-      <div class="menu-navigation">
-        <div class="logo-and-sitename">
-          <img class="logo" src="./images/logo.png" alt="logo do site">
-          <span class="sitename">Posting Page</span>
-        </div>
-        <a class="post-now" href="#">Postar agora</a>
-      </div>
-    </nav>
-
-    <section id="hero">
-      <div class="hero-image">
-        <img src="images/image-hero.png" alt="umas árvores de fundo, um laptop e uma postagem nele">
-      </div>
-      <div class="hero-texts">
-        <h1>Escreva, Poste e Brilhe</h1>
-        <p>Um espaço minimalista para suas ideias mais estreitas. Vamos lá, mostre seu talento!</p>
-        <a href="#">Começar agora</a>
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <section id="form-post">
-      <div class="left-form-content">
-        <span>Vamos escrever?</span>
-      </div>
-      <div class="right-form-content">
-        <h2>A Arte de Postar</h2>
-        <div class="right-form-content-desc">
-          <div class="desc-images">
-            <img class="desc-img" src="images/Brazuca - Sitting.png" alt="Imagem de uma lampada acessa com a cor banca">
-            <div class="desc-icon-container"><img class="desc-icon" src="images/ion--paper-plane.svg"
-                alt="Ícone de um avião de papel"></div>
+  <body>
+    <header>
+      <nav id="menu-desktop">
+        <div class="menu-navigation">
+          <div class="logo-and-sitename">
+            <img class="logo" src="./images/logo.png" alt="logo do site" />
+            <span class="sitename">Posting Page</span>
           </div>
-          <div class="desc-texts">
-            <p>Neste blog, você pode deixar sua criatividade fluir sem barreiras. Escreva o título, adicione uma
-              descrição e clique em
-              postar. É simples assim! Não perca tempo, suas ideias merecem ser lidas!</p>
+          <a class="post-now" href="#">Postar agora</a>
+        </div>
+      </nav>
+
+      <section id="hero">
+        <div class="hero-image">
+          <img
+            src="images/image-hero.png"
+            alt="umas árvores de fundo, um laptop e uma postagem nele"
+          />
+        </div>
+        <div class="hero-texts">
+          <h1>Escreva, Poste e Brilhe</h1>
+          <p>
+            Um espaço minimalista para suas ideias mais estreitas. Vamos lá,
+            mostre seu talento!
+          </p>
+          <a href="#">Começar agora</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="creative-posting">
+        <div class="left-form-content">
+          <span>Vamos escrever?</span>
+        </div>
+        <div class="right-form-content">
+          <h2>A Arte de Postar</h2>
+          <div class="right-form-content-desc">
+            <div class="desc-images">
+              <img
+                class="desc-img"
+                src="images/Brazuca - Sitting.png"
+                alt="Imagem de uma lampada acessa com a cor banca"
+              />
+              <div class="desc-icon-container">
+                <img
+                  class="desc-icon"
+                  src="images/ion--paper-plane.svg"
+                  alt="Ícone de um avião de papel"
+                />
+              </div>
+            </div>
+            <div class="desc-texts">
+              <p>
+                Neste blog, você pode deixar sua criatividade fluir sem
+                barreiras. Escreva o título, adicione uma descrição e clique em
+                postar. É simples assim! Não perca tempo, suas ideias merecem
+                ser lidas!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-</body>
-
+      </section>
+      <section id="section-form">
+        <div class="form-content">
+          <form id="form">
+            <h2>Liberte suas ideias!</h2>
+            <div class="content-text">
+              <label for="title">Dê um nome à aua criação</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Insira o seu título"
+                class="input-texts"
+              />
+            </div>
+            <div class="content-text">
+              <label for="paragraph">Descreva sua ideia</label>
+              <textarea
+                name="paragraph"
+                id="paragraph"
+                placeholder="Insira sua ideia!"
+                class="input-texts"
+              ></textarea>
+            </div>
+            <input type="submit" class="form-submit" value="Postar" />
+          </form>
+          <div id="form-image">
+            <img
+              src="images/Chatting 1.svg"
+              alt="Mulher digitando no celular"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="submitted-posts">
+        <div id="posts-content">
+          <div class="posts-content-header">
+            <span>O que dizem</span>
+            <h2>Postagens recentes</h2>
+          </div>
+          <div class="posts-content-body">
+            <div class="post-card">
+              <h2 class="title-card">Título teste</h2>
+              <p class="paragraph-card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque maiores, ducimus delectus blanditiis cum saepe vel
+                temporibus officiis maxime tempore facere vitae necessitatibus
+                beatae animi cumque molestiae porro laboriosam libero!
+              </p>
+            </div>
+            <div class="post-card">
+              <h2 class="title-card">Título teste</h2>
+              <p class="paragraph-card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque maiores, ducimus delectus blanditiis cum saepe vel
+                temporibus officiis maxime tempore facere vitae necessitatibus
+                beatae animi cumque molestiae porro laboriosam libero!
+              </p>
+            </div>
+            <div class="post-card">
+              <h2 class="title-card">Título teste</h2>
+              <p class="paragraph-card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque maiores, ducimus delectus blanditiis cum saepe vel
+                temporibus officiis maxime tempore facere vitae necessitatibus
+                beatae animi cumque molestiae porro laboriosam libero!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
