@@ -14,6 +14,29 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      & h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+
+  /* Sessão de apresentação do formulário */
+  #creative-posting {
+    flex-direction: column;
+
+    & .right-form-content {
+      text-align: center;
+
+      & h2 {
+        font-size: 5rem;
+        margin-top: 2rem;
+      }
+
+      & .right-form-content-desc {
+        flex-direction: column;
+      }
     }
   }
 
@@ -68,7 +91,16 @@
 }
 
 /* Celulares */
-@media (max-width: 390px) {
+@media (max-width: 480px) {
+  /* Menu mobile */
+  #menu-desktop {
+    & .menu-navigation {
+      & .post-now {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
   /* Sessão Hero */
   #hero {
     & .hero-texts {
