@@ -105,7 +105,7 @@
   #hero {
     & .hero-texts {
       & h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -118,7 +118,7 @@
       text-align: center;
 
       & h2 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-top: 4rem;
       }
 
@@ -139,7 +139,7 @@
         padding-bottom: 20px;
 
         & h2 {
-          font-size: 4rem;
+          font-size: 3.5rem;
         }
 
         & .content-text {
