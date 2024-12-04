@@ -1,0 +1,132 @@
+@media (max-width: 768px) {
+  /* Sessão Hero*/
+  #hero {
+    flex-direction: column;
+
+    & .hero-image {
+      flex: 0;
+    }
+
+    & .hero-texts {
+      text-align: center;
+      flex: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /* Sessão de enviar o formulário */
+  #section-form {
+    & .form-content {
+      flex-direction: column-reverse;
+      height: 800px;
+
+      & #posts-form {
+        flex: 1;
+      }
+
+      & #form-image {
+        flex: 0;
+        width: 100%;
+        height: 30%;
+
+        & img {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  #submitted-posts {
+    & #posts-content {
+      padding-inline: 10px;
+
+      & .posts-content-header {
+        & span {
+          top: 0;
+        }
+
+        & h2 {
+          font-size: 4rem;
+          margin-top: 7rem;
+        }
+      }
+
+      & .posts-content-body {
+        & .post-card {
+          max-width: 350px;
+
+          & .title-card {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Celulares */
+@media (max-width: 390px) {
+  /* Sessão Hero */
+  #hero {
+    & .hero-texts {
+      & h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  /* Sessão de apresentação do formulário */
+  #creative-posting {
+    flex-direction: column;
+
+    & .right-form-content {
+      text-align: center;
+
+      & h2 {
+        font-size: 5rem;
+        margin-top: 4rem;
+      }
+
+      & .right-form-content-desc {
+        flex-direction: column;
+      }
+    }
+  }
+
+  /* Sessão de enviar o formulário */
+  #section-form {
+    & .form-content {
+      height: 700px;
+
+      & #posts-form {
+        flex: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        & h2 {
+          font-size: 4rem;
+        }
+
+        & .content-text {
+          & label,
+          & .input-texts {
+            width: 100%;
+          }
+        }
+      }
+
+      & #form-image {
+        flex: 0;
+        width: 100%;
+        height: 50%;
+
+        & img {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

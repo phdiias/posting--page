@@ -78,17 +78,21 @@ button {
 
 /* Sessão Hero */
 #hero {
+  padding-inline: 5px;
   max-width: 1188px;
   width: 100%;
+  height: 700px;
   margin: 0 auto;
-  margin-top: 20rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 
   & .hero-image {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     & img {
       width: 80%;
     }
@@ -131,10 +135,10 @@ button {
 
 /* Sessão de apresentação do formulário  */
 #creative-posting {
+  padding-inline: 10px;
   max-width: 1188px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +209,7 @@ button {
         & p {
           font-size: 2rem;
           font-weight: 400;
+          text-align: justify;
         }
       }
     }
@@ -213,10 +218,11 @@ button {
 
 /* Sessão de enviar o formulário */
 #section-form {
+  padding-top: 10rem;
+  padding-inline: 10px;
   max-width: 1188px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 10rem;
   margin-bottom: 10rem;
 
   & .form-content {
@@ -247,6 +253,7 @@ button {
         margin-bottom: 2rem;
         font-size: 5rem;
         font-weight: 500;
+        text-align: center;
       }
 
       & .content-text {
@@ -376,13 +383,13 @@ button {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
       flex-wrap: wrap;
+      gap: 2rem;
 
       & .post-card {
-        max-width: 380px;
+        max-width: 500px;
         width: 100%;
-        height: 200px;
+        height: 180px;
         background-color: #f4f4f4;
         padding: 10px;
         border-radius: 10px;
@@ -402,6 +409,7 @@ button {
           text-wrap: wrap;
           font-size: 2rem;
           font-weight: 500;
+          text-align: justify;
           color: #555555;
         }
 
@@ -409,6 +417,26 @@ button {
           background-color: #e0f7f3;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+      }
+    }
+  }
+}
+
+/* Rodapé, direitos autorais */
+footer {
+  background-color: #fff;
+  padding: 1rem;
+
+  & p {
+    font-size: 2rem;
+    text-align: center;
+
+    & a {
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
       }
     }
   }
